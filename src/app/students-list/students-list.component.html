@@ -1,0 +1,69 @@
+<div class="pagetitle">
+    <h1>Students</h1>
+    <nav>
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Config</a></li>
+        <li class="breadcrumb-item active">Students List</li>
+      </ol>
+    </nav>
+  </div><!-- End Page Title -->
+
+
+  <section class="section">
+    <div class="row">
+      <div class="col-lg-12">
+
+        <div class="card">
+          <div class="card-body"> 
+
+           <div class="mt-3">
+             <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#add-student-modal"><i class="bi bi-plus"></i> New Student</button>
+           </div>
+            
+           <hr>
+
+            <div class="row mt-4">
+                <div class="col-md-12">
+                    <div class="responsive">
+                        <!-- Table with stripped rows -->
+                        <table class="table table-hover" datatable>
+                            <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">REG NO</th>
+                                <th scope="col">NAME</th>
+                                <th scope="col">EMAIL</th>
+                                <th scope="col">PHONE NO</th>
+                                <th scope="col">ACTION</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>COM/0051/2015</td>
+                                <td>NELSON OMOI</td>
+                                <td>omoinelson3@gmail.com</td>
+                                <td>+254720077150</td>
+                                <td>
+                                    <a role="button" href="#" class="btn btn-sm">
+                                        <i class="bi bi-eye"></i>
+                                        View</a>
+                                </td>
+                            </tr>
+                        </table>
+                        <!-- End Table with stripped rows -->
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="modal fade" id="add-student-modal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <app-forms></app-forms>
+    </div>
+  </div><!-- End Basic Modal-->
